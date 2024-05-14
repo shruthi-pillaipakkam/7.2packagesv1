@@ -1,77 +1,75 @@
-fileVersion: 1
-id: 181eb83c-2cc0-4306-9efd-367867a5b670
-name: REGION
-operation:
-  database: ""
-  dataset: ""
-  deployEnabled: true
-  description: ""
-  locationName: SAMPLE
-  metadata:
-    columns:
-      - acceptedValues:
-          strictMatch: true
-          values: []
-        appliedColumnTests: {}
-        columnReference:
-          columnCounter: 96ac2011-16fa-4ef2-950d-f7bbd63322cf
-          stepCounter: 181eb83c-2cc0-4306-9efd-367867a5b670
-        config: {}
-        dataType: NUMBER(38,0)
-        defaultValue: ""
-        description: ""
-        name: R_REGIONKEY
-        nullable: false
-        primaryKey: false
-        sourceColumnReferences:
-          - columnReferences: []
+steps:
+  REGION-181eb83c-2cc0-4306-9efd-367867a5b670:
+    operation:
+      database: ""
+      dataset: ""
+      deployEnabled: true
+      description: ""
+      locationName: SAMPLE
+      metadata:
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 96ac2011-16fa-4ef2-950d-f7bbd63322cf
+              stepCounter: 181eb83c-2cc0-4306-9efd-367867a5b670
+            config: {}
+            dataType: NUMBER(38,0)
+            defaultValue: ""
+            description: ""
+            name: R_REGIONKEY
+            nullable: false
+            primaryKey: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
             transform: ""
-        transform: ""
-        uniqueKey: false
-      - acceptedValues:
-          strictMatch: true
-          values: []
-        appliedColumnTests: {}
-        columnReference:
-          columnCounter: 149af967-8cbf-4cb8-8585-097dc1f7dcab
-          stepCounter: 181eb83c-2cc0-4306-9efd-367867a5b670
-        config: {}
-        dataType: VARCHAR(25)
-        defaultValue: ""
-        description: ""
-        name: R_NAME
-        nullable: false
-        primaryKey: false
-        sourceColumnReferences:
-          - columnReferences: []
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 149af967-8cbf-4cb8-8585-097dc1f7dcab
+              stepCounter: 181eb83c-2cc0-4306-9efd-367867a5b670
+            config: {}
+            dataType: VARCHAR(25)
+            defaultValue: ""
+            description: ""
+            name: R_NAME
+            nullable: false
+            primaryKey: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
             transform: ""
-        transform: ""
-        uniqueKey: false
-      - acceptedValues:
-          strictMatch: true
-          values: []
-        appliedColumnTests: {}
-        columnReference:
-          columnCounter: 77940022-27b5-4615-8215-26fca81baf27
-          stepCounter: 181eb83c-2cc0-4306-9efd-367867a5b670
-        config: {}
-        dataType: VARCHAR(152)
-        defaultValue: ""
-        description: ""
-        name: R_COMMENT
-        nullable: true
-        primaryKey: false
-        sourceColumnReferences:
-          - columnReferences: []
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 77940022-27b5-4615-8215-26fca81baf27
+              stepCounter: 181eb83c-2cc0-4306-9efd-367867a5b670
+            config: {}
+            dataType: VARCHAR(152)
+            defaultValue: ""
+            description: ""
+            name: R_COMMENT
+            nullable: true
+            primaryKey: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
             transform: ""
-        transform: ""
-        uniqueKey: false
-    join:
-      joinCondition: FROM {{ ref('SAMPLE', 'REGION') }}
-  name: REGION
-  schema: ""
-  sqlType: Source
-  table: REGION
-  type: sourceInput
-  version: 1
-type: Node
+            uniqueKey: false
+        join:
+          joinCondition: FROM {{ ref('SAMPLE', 'REGION') }}
+      name: REGION
+      schema: ""
+      sqlType: Source
+      table: REGION
+      type: sourceInput
+    stepCounter: 181eb83c-2cc0-4306-9efd-367867a5b670
